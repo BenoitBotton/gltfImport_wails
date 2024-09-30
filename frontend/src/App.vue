@@ -17,6 +17,8 @@ import Cylinder_1013 from './components/Cylinder_1013.vue'
       <Cylinder_1013 /> 
     </Suspense>
     <TresAmbientLight :intensity="1" />
+    <TresDirectionalLight :intensity="1" :position="[500, 500, 0]" />
+    <TresDirectionalLight :intensity="0.5" :position="[-500, 500, 0]" />
   </TresCanvas>
 </template>
 
