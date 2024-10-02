@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@tresjs/cientos": "^3.8.0",
-    "@tresjs/core": "^4.2.8",
+    "@tresjs/core": "^4.3.0",
     "three": "^0.169.0"
   },
   "devDependencies": {
