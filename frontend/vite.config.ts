@@ -5,12 +5,19 @@ import { templateCompilerOptions } from '@tresjs/core'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue({
-    // template: {
-    //   compilerOptions: {
-    //     isCustomElement: tag => tag.startsWith('Tres') && tag !== 'TresCanvas',
-    //   },
-    // },
     ...templateCompilerOptions
   }
-  )]
+  )],
+  optimizeDeps: {
+    esbuildOptions: {
+      supported: {
+        'top-level-await': true,
+      },
+    },
+  },
+  esbuild: {
+    supported: {
+      'top-level-await': true,
+    },
+  },
 })
