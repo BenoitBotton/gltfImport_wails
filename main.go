@@ -20,7 +20,7 @@ func main() {
 		Title:       "gltfImport_wails",
 		Width:       1024,
 		Height:      768,
-		StartHidden: true,
+		StartHidden: false,
 		AssetServer: &assetserver.Options{
 			Assets: assets,
 		},
