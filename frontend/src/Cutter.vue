@@ -25,7 +25,7 @@ import * as Shapes from './components/index'
 
 type Cutter = {
     spiral: number
-    ctype: number
+    ctype: string
     shape: string
     dia: number
     backrake: number

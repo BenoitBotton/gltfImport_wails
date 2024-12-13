@@ -7,7 +7,7 @@ import { ref } from 'vue'
 const cutters = ref([
   {
     spiral: 1,
-    ctype: 1313,
+    ctype: "1313",
     shape:'cylinder',
     dia: 13.2,
     backrake: 20,
@@ -20,7 +20,7 @@ const cutters = ref([
   },
   {
     spiral: 2,
-    ctype: 1308,
+    ctype: "1308",
     shape:'cylinder',
     dia: 13.2,
     backrake: 25,
