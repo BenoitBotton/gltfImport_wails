@@ -11,7 +11,7 @@
     "isolatedModules": true,
     "esModuleInterop": true,
     "lib": [
-      "es6",
+      "ESNext",
       "DOM"
     ],
     "skipLibCheck": true
@@ -19,7 +19,6 @@
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
-    "src/**/*.tsx",
     "src/**/*.vue"
   ],
   "references": [
