@@ -10,16 +10,15 @@
   },
   "dependencies": {
     "@tresjs/cientos": "^4.0.3",
-    "@tresjs/core": "^4.3.1",
-    "three": "^0.171.0",
-    "vite-plugin-vue-devtools": "^7.6.8",
+    "@tresjs/core": "^4.3.1",  
     "vuestic-ui": "^1.10.3"
   },
   "devDependencies": {
     "@babel/types": "^7.26.0",
     "@types/three": "^0.170.0",
     "@vitejs/plugin-vue": "^4.6.2",
-    "typescript": "^5.6.2",
+    "vite-plugin-vue-devtools": "^7.6.8",
+    "typescript": "^5.6.3",
     "vite": "^4.5.5",
     "vue": "^3.5.13",
     "vue-tsc": "^2.1.10"
