@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@auth0/auth0-vue": "^2.4.0",
     "@tresjs/cientos": "^4.0.3",
     "@tresjs/core": "^4.3.1",
     "vuestic-ui": "^1.10.3"

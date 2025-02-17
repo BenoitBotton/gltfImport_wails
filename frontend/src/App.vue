@@ -3,6 +3,10 @@ import { TresCanvas } from '@tresjs/core'
 import { OrbitControls } from '@tresjs/cientos'
 import Cutter from './Cutter.vue'
 import { ref } from 'vue'
+import { useAuth0 } from "@auth0/auth0-vue"
+import LoginPage from './components/auth/LoginPage.vue'
+
+const { isAuthenticated, isLoading } = useAuth0()
 
 const cutters = ref([
   {
@@ -37,7 +41,7 @@ const options = ["1313", "1308"]
 </script>
 
 <template>
-  <div class="container">
+  <div  v-if="isAuthenticated" class="container">
     <div >
       <VaSelect v-model="cutters[0].ctype" :options="options" label="cutter 1 type" />
       <VaSelect v-model="cutters[1].ctype" :options="options" label="cutter 2 type" />
@@ -57,6 +61,7 @@ const options = ["1313", "1308"]
       </TresCanvas>
     </div>
   </div>
+  <LoginPage v-else />
 </template>
 
 <style scoped>
